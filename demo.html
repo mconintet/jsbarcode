@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>code 128</title>
+</head>
+<body>
+<div>
+    <input type="text" id="stuff" placeholder="data to be encoded"/>
+    <input type="button" value="run" id="btnRun"/>
+</div>
+<canvas id="demo"></canvas>
+<script type="text/javascript" src="barcode.js"></script>
+<script type="text/javascript">
+    (function () {
+        var run = function () {
+            var stuff = document.querySelector('#stuff').value.trim();
+            if (!stuff) {
+                alert('data cannot be empty')
+            }
+
+            barcode128(stuff).renderTo(document.querySelector('#demo'));
+        };
+
+        document.querySelector('#btnRun').addEventListener('click', run);
+    })();
+</script>
+</body>
+</html>

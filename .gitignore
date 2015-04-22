@@ -1,0 +1,7 @@
+.*
+!.gitignore
+*.iml
+test/
+test.*
+main.go
+
