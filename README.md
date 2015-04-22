@@ -10,7 +10,8 @@ barcode128('HI34567HI').renderTo(document.querySelector('#demo'));
 
 Output will be:
 
-![HI34567HI](demo.png)
+![HI34567HI]
+(demo.png)
 
 ## Restrict
 
