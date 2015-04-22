@@ -887,7 +887,7 @@
                 if (st) {
                     ctx.font = "12px Arial";
                     ctx.textAlign = "center";
-                    ctx.fillText(this.stuff, width * 0.5, height);
+                    ctx.fillText(this.stuff, width * 0.5, height - qy);
                 }
             }
         };
