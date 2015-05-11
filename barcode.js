@@ -887,6 +887,8 @@
                 if (st) {
                     ctx.font = "12px Arial";
                     ctx.textAlign = "center";
+
+                    this.stuff = this.stuff.match(/\d{4}|\d{1,3}$/g).join('-');
                     ctx.fillText(this.stuff, width * 0.5, height - qy);
                 }
             }
